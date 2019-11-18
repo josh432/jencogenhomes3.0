@@ -46,9 +46,26 @@
         font-family: "Libre Baskerville", serif;
       }
 
+      #overlay {
+        background-color: rgba(97, 97, 97, 0.5);
+        margin: 0 0 10px 10px;
+      }
+
       @media only screen and (max-width: 1156px) {
         nav ul li a {
           font-size: 0.9em;
+        }
+      }
+
+      @media only screen and (max-width: 1384px) {
+        #overlay {
+          font-size: 0.9em;
+        }
+      }
+
+      @media only screen and (max-width: 611px) {
+        #dudum {
+          height: 50px;
         }
       }
     </style>
@@ -91,7 +108,7 @@
           <div class="card">
             <div class="card-image">
               <img class="responsive-image" src="img/kitchen.jpg" />
-              <span class="card-title">Live The Good Life</span>
+              <span class="card-title" id="overlay">Live The Good Life</span>
             </div>
           </div>
         </div>
