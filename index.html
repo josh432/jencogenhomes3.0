@@ -80,6 +80,18 @@
         color: dimgray;
       }
 
+      .light {
+        background-color: #e0e0e0;
+      }
+
+      .social {
+        padding-top: 25px;
+      }
+
+      .fb_iframe_widget {
+        padding-bottom: 25px;
+      }
+
       @media only screen and (max-width: 1156px) {
         nav ul li a {
           font-size: 0.9em;
@@ -259,8 +271,8 @@
       <br />
 
       <!--Social Section-->
-      <div class="center-align">
-        <h4>Stay Social</h4>
+      <div class="center-align light">
+        <h4 class="social">Stay Social</h4>
         <div class="row">
           <a href="https://www.facebook.com/jencogenhomes/" target="_blank"
             ><i class="fab fa-facebook-square fa-3x three"></i
@@ -303,6 +315,21 @@
       </div>
     </div>
 
+    <br />
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/pic1.PNG" /></div>
+    </div>
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header">Parallax</h2>
+        <p class="grey-text text-darken-3 lighten-3">
+          Parallax is an effect where the background content or image in this
+          case, is moved at a different speed than the foreground content while
+          scrolling.
+        </p>
+      </div>
+    </div>
+
     <!--JavaScript at end of body for optimized loading-->
     <script
       type="text/javascript"
@@ -312,6 +339,7 @@
     <script>
       $(document).ready(function() {
         $(".sidenav").sidenav();
+        $(".parallax").parallax();
       });
     </script>
   </body>
