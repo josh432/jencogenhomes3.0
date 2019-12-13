@@ -49,16 +49,24 @@ p.title {
   font-size: 1.2em;
 }
 
+.greet {
+  color: #3399ff;
+}
+
 .rise {
-  margin-top: -40px;
+  margin-top: 1em;
+}
+a.btn-large {
+  background-color: #002856;
 }
 
 .small {
-  font-size: 0.9rem;
+  font-size: 1.1em;
+  font-weight: 600;
 }
 
 .three {
-  color: dimgray;
+  color: #3399ff;
 }
 
 .light {
