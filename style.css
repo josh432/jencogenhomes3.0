@@ -4,6 +4,10 @@ nav ul li a {
   font-size: 1.2em;
 }
 
+.sidenav li>a>i, .sidenav li>a>[class^="mdi-"], .sidenav li>a li>a>[class*="mdi-"], .sidenav li>a>i.material-icons {
+  color: white;
+}
+
 .custom {
   background-color: #002856;
 }
