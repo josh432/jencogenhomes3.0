@@ -1,15 +1,19 @@
 nav ul li a {
-  color: #34b3a6;
-  font-family: "Libre Baskerville", serif;
+  color: #ffff;
+  font-family: "Arimo", serif;
   font-size: 1.2em;
 }
 
+.custom {
+  background-color: #002856;
+}
+
 ul#mobile-demo li a {
-  color: #34b3a6;
-  font-family: "Libre Baskerville", serif;
+  color: #fff;
+  font-family: "Glegoo", serif;
 }
 .sidenav {
-  background-color: rgba(97, 97, 97, 0.5);
+  background-color: rgba(0, 40, 86, 0.5);
 }
 
 #dudum {
@@ -18,7 +22,7 @@ ul#mobile-demo li a {
 }
 
 .card-title {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Glegoo", serif;
 }
 
 #overlay {
@@ -28,13 +32,13 @@ ul#mobile-demo li a {
 
 h4,
 h5 {
-  font-family: "Libre Baskerville", serif;
-  color: #34b3a6;
+  font-family: "Glegoo", serif;
+  color: #002856;
 }
 
 p,
 .btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
 p.title {
