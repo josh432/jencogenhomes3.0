@@ -54,10 +54,14 @@ p.title {
 }
 
 .rise {
-  margin-top: 1em;
+  margin-top: -1.3em;
 }
 a.btn-large {
   background-color: #002856;
+}
+
+a.btn-large:hover {
+  background-color: #3399ff;
 }
 
 .small {
@@ -66,7 +70,7 @@ a.btn-large {
 }
 
 .three {
-  color: #3399ff;
+  color: #002856;
 }
 
 .light {
