@@ -26,10 +26,12 @@ ul#mobile-demo li a {
 }
 
 #overlay {
-  background-color: rgba(97, 97, 97, 0.5);
   margin: 0 0 10px 10px;
 }
 
+h1,
+h2,
+h3,
 h4,
 h5 {
   font-family: "Glegoo", serif;
@@ -45,6 +47,14 @@ p.title {
   color: black;
   font-weight: bold;
   font-size: 1.2em;
+}
+
+.rise {
+  margin-top: -40px;
+}
+
+.small {
+  font-size: 0.9rem;
 }
 
 .three {
@@ -90,5 +100,11 @@ p.title {
 @media only screen and (max-width: 650px) {
   button.btn {
     margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 613px) {
+  .rise {
+    margin-top: 20px;
   }
 }
