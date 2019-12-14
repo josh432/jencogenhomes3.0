@@ -74,6 +74,8 @@ a.btn-large:hover {
 .small {
   font-size: 1.1em;
   font-weight: 600;
+  color: #002856;
+  text-align: justify;
 }
 
 .three {
