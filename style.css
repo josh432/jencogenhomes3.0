@@ -4,6 +4,10 @@ nav ul li a {
   font-size: 1.2em;
 }
 
+nav ul li a:hover {
+  color: #3399ff;
+}
+
 .sidenav li > a > i,
 .sidenav li > a > [class^="mdi-"],
 .sidenav li > a li > a > [class*="mdi-"],
