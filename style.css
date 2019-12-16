@@ -93,6 +93,10 @@ a.btn-large:hover {
   background-color: #e0e0e0;
 }
 
+.white-text {
+  font-family: "Glegoo", serif;
+}
+
 .social {
   padding-top: 25px;
 }
