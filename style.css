@@ -27,6 +27,12 @@ ul#mobile-demo li a {
   background-color: rgba(0, 40, 86, 0.5);
 }
 
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
 #dudum {
   height: 60px;
   padding-top: 5px;
