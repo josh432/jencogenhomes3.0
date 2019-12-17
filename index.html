@@ -26,7 +26,7 @@
     src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
 
   <!--Navbar-->
-  <nav>
+  <nav id="nav">
     <div class="nav-wrapper custom">
       <div class="container">
         <a href="#!" class="brand-logo"><img src="img/Dudum_Logo.png" id="dudum" /></a>
@@ -326,9 +326,51 @@
       $(".parallax").parallax();
       $(".materialboxed").materialbox();
       $(".scrollspy").scrollSpy();
+
+
+      // Hide header on scroll down
+      var didScroll;
+      var lastScrollTop = 0;
+      var delta = 5;
+      var navbarHeight = $('nav').outerHeight();
+
+      $(window).scroll(function (event) {
+        didScroll = true;
+      });
+
+      setInterval(function () {
+        if (didScroll) {
+          hasScrolled();
+          didScroll = false;
+        }
+      }, 250);
+
+      function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        // Make scroll more than delta
+        if (Math.abs(lastScrollTop - st) <= delta)
+          return;
+
+        // If scrolled down and past the navbar, add class .nav-up.
+        if (st > lastScrollTop && st > navbarHeight) {
+          // Scroll Down
+          $('nav').addClass('sticky-nav');
+        } else {
+          // Scroll Up
+          if (st + $(window).height() < $(document).height()) {
+            $('nav').removeClass('sticky-nav');
+          }
+        }
+
+        lastScrollTop = st;
+      }
+
     });
   </script>
   <script src="https://kit.fontawesome.com/7acdbbb9f2.js"></script>
+
+
 </body>
 
 </html>
