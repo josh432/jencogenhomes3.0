@@ -355,11 +355,11 @@
         // If scrolled down and past the navbar, add class .nav-up.
         if (st > lastScrollTop && st > navbarHeight) {
           // Scroll Down
-          $('nav').addClass('sticky-nav');
+          $('nav').removeClass('sticky-nav');
         } else {
           // Scroll Up
           if (st + $(window).height() < $(document).height()) {
-            $('nav').removeClass('sticky-nav');
+            $('nav').addClass('sticky-nav');
           }
         }
 
