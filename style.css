@@ -8,10 +8,6 @@ nav ul li a:hover {
   color: #3399ff;
 }
 
-.sticky-nav {
-  transition: top 0.2s ease-in-out;
-}
-
 .sidenav li > a > i,
 .sidenav li > a > [class^="mdi-"],
 .sidenav li > a li > a > [class*="mdi-"],
@@ -35,6 +31,11 @@ ul#mobile-demo li a {
   position: fixed;
   top: 0;
   z-index: 1;
+  transition: top 0.2s ease-in-out;
+}
+
+.nav-down {
+  top: -50px;
 }
 
 #dudum {
