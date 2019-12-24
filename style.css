@@ -85,6 +85,9 @@ a.btn-large:hover {
   color: #002856;
 }
 
+i:hover {
+  color: #3399ff;
+}
 .small {
   font-size: 1.1em;
   font-weight: 600;
