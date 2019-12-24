@@ -137,52 +137,59 @@
       Communities
     </h4>
     <div class="row">
-
       <div class="col s12 m4">
-        <div class="card-panel teal">
-          <span class="white-text">Lafayette
-          </span>
+        <div class="card">
+          <div class="card-image">
+            <img src="img/lafayette.jpg">
+            <span class="card-title">Lafayette</span>
+          </div>
         </div>
-
       </div>
 
       <div class="col s12 m4">
-        <div class="card-panel teal">
-          <span class="white-text">Martinez
-          </span>
+        <div class="card">
+          <div class="card-image">
+            <img src="img/pleasanthill.jpg">
+            <span class="card-title">Martinez</span>
+          </div>
         </div>
-
       </div>
 
       <div class="col s12 m4">
-        <div class="card-panel teal">
-          <span class="white-text">Moraga
-          </span>
+        <div class="card">
+          <div class="card-image">
+            <img src="img/pleasanthill.jpg">
+            <span class="card-title">Moraga</span>
+          </div>
         </div>
-
       </div>
+    </div>
+    <div class="row">
       <div class="col s12 m4">
-        <div class="card-panel teal">
-          <span class="white-text">Orinda
-          </span>
+        <div class="card">
+          <div class="card-image">
+            <img src="img/pleasanthill.jpg">
+            <span class="card-title">Orinda</span>
+          </div>
         </div>
-
-      </div>
-
-      <div class="col s12 m4">
-        <div class="card-panel teal">
-          <span class="white-text">Pleasant Hill
-          </span>
-        </div>
-
       </div>
 
       <div class="col s12 m4">
-        <div class="card-panel teal">
-          <span class="white-text">Walnut Creek
-          </span>
+        <div class="card">
+          <div class="card-image">
+            <img src="img/pleasanthill.jpg">
+            <span class="card-title">Pleasant Hill</span>
+          </div>
         </div>
+      </div>
 
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/pleasanthill.jpg">
+            <span class="card-title">Walnut Creek</span>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -343,7 +350,7 @@
           hasScrolled();
           didScroll = false;
         }
-      }, 250);
+      }, 25);
 
       function hasScrolled() {
         var st = $(this).scrollTop();
@@ -360,6 +367,7 @@
           // Scroll Up
           if (st + $(window).height() < $(document).height()) {
             $('nav').addClass('sticky-nav');
+
           }
         }
 
