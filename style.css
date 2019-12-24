@@ -35,7 +35,7 @@ ul#mobile-demo li a {
   position: fixed;
   top: 0;
   z-index: 1;
-  transition: top 0.3s;
+  transition: top 0.3s ease-in;
 }
 
 .nav-down {
