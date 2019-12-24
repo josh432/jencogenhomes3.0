@@ -16,7 +16,7 @@ nav ul li a:hover {
 .sidenav li > a > [class^="mdi-"],
 .sidenav li > a li > a > [class*="mdi-"],
 .sidenav li > a > i.material-icons {
-  color: white;
+  color: #fff;
 }
 
 .custom {
@@ -97,7 +97,7 @@ a.btn-large {
 
 a.btn-large:hover {
   background-color: #3399ff;
-  color: white;
+  color: #fff;
   border-color: transparent;
 }
 
