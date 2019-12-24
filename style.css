@@ -84,8 +84,14 @@ p.title {
   margin-top: -1.3em;
 }
 a.btn-large {
-  background-color: #002856;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: #002856;
+  color: #002856;
   font-family: "Glegoo", serif;
+  font-weight: bold;
   z-index: 0;
 }
 
