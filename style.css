@@ -41,7 +41,7 @@ ul.sidenav {
 }
 
 img#mainimg {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .card-title {
@@ -145,7 +145,7 @@ i:hover {
 
 @media only screen and (max-width: 611px) {
   #dudum {
-    height: 50px;
+    height: 100px;
   }
 }
 
