@@ -9,14 +9,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #00b2e3;
-}
-
-.sidenav li > a > i,
-.sidenav li > a > [class^="mdi-"],
-.sidenav li > a li > a > [class*="mdi-"],
-.sidenav li > a > i.material-icons {
-  color: #fff;
+  color: #3399ff;
 }
 
 .custom {
@@ -24,10 +17,10 @@ nav ul li a:hover {
 }
 
 ul#mobile-demo li a {
-  color: #fff;
   font-family: "Glegoo", serif;
+  color: #fff;
 }
-.sidenav {
+ul.sidenav {
   background-color: rgba(0, 40, 86, 0.5);
 }
 
@@ -45,6 +38,10 @@ ul#mobile-demo li a {
 #dudum {
   height: 150px;
   padding-top: 5px;
+}
+
+img#mainimg {
+  margin-top: 100px;
 }
 
 .card-title {
@@ -148,7 +145,7 @@ i:hover {
 
 @media only screen and (max-width: 611px) {
   #dudum {
-    height: 100px;
+    height: 50px;
   }
 }
 
