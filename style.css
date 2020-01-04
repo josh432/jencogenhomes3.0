@@ -9,7 +9,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #3399ff;
+  color: #00b2e3;
 }
 
 .sidenav li > a > i,
@@ -61,7 +61,7 @@ h3,
 h4,
 h5 {
   font-family: "Glegoo", serif;
-  color: #002856;
+  color: #011e41;
 }
 
 p,
@@ -76,7 +76,7 @@ p.title {
 }
 
 .greet {
-  color: #3399ff;
+  color: #00b2e3;
   text-align: justify;
 }
 
@@ -88,31 +88,31 @@ a.btn-large {
   border-width: 2px;
   border-style: solid;
   border-radius: 3px;
-  border-color: #002856;
-  color: #002856;
+  border-color: #011e41;
+  color: #011e41;
   font-family: "Glegoo", serif;
   font-weight: bold;
   z-index: 0;
 }
 
 a.btn-large:hover {
-  background-color: #3399ff;
+  background-color: #00b2e3;
   color: #fff;
   border-color: transparent;
 }
 
 i:hover {
-  color: #3399ff;
+  color: #00b2e3;
 }
 .small {
   font-size: 1.1em;
   font-weight: 600;
-  color: #002856;
+  color: #011e41;
   text-align: justify;
 }
 
 .three {
-  color: #002856;
+  color: #011e41;
 }
 
 .light {
@@ -148,7 +148,7 @@ i:hover {
 
 @media only screen and (max-width: 611px) {
   #dudum {
-    height: 50px;
+    height: 100px;
   }
 }
 
