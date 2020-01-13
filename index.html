@@ -348,42 +348,20 @@
     <div class="section white">
       <div class="row container">
         <h2 class="header">29 Day Guide</h2>
-        <p class="grey-text text-darken-3 lighten-3">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam id
-          pariatur fugiat quos ratione delectus voluptates ab qui doloribus
-          porro at voluptatem minima natus suscipit temporibus perferendis
-          veritatis cumque, nemo, impedit illo esse earum? Aspernatur harum
-          magnam quis officia tempore laboriosam vero ut ducimus architecto
-          porro et, nulla atque commodi quae recusandae perferendis voluptate
-          nam quo quam. Aliquam reprehenderit explicabo accusantium. Laborum
-          quae sed laudantium ut natus pariatur quia porro nihil architecto!
-          Totam eligendi sit neque, nesciunt dicta asperiores accusantium
-          impedit quas, tenetur velit corporis! Neque vitae, eveniet officiis
-          repudiandae nihil at facilis ea. Eaque nisi dignissimos praesentium
-          aspernatur incidunt cupiditate necessitatibus saepe quaerat aperiam
-          pariatur esse inventore rem veniam id maiores dolor, amet cum autem?
-          Porro animi consequuntur distinctio iure! Nesciunt soluta perspiciatis
-          autem iste nulla, aut vitae. Excepturi, saepe. Excepturi commodi
-          laudantium, obcaecati est fuga accusamus repellendus et libero, eaque,
-          eius explicabo! Nostrum aliquid velit at! Voluptas, atque ab fugit
-          numquam ducimus deserunt asperiores culpa minus, quae nisi unde! Ea
-          debitis, magnam officia fugiat distinctio quidem. Quasi culpa
-          perferendis, neque repellat ducimus minima expedita perspiciatis et?
-          Veniam ea recusandae sit, temporibus quae debitis eaque corrupti
-          explicabo at, eum ad quam facere numquam ab. Reiciendis iusto
-          obcaecati optio aliquid accusamus labore similique assumenda excepturi
-          eveniet, voluptatum pariatur, officia blanditiis dolore perspiciatis
-          quibusdam? Officiis illo deserunt ipsa quidem voluptatibus
-          consequatur. Ea, maxime. Alias reiciendis quae ea vel quidem nesciunt
-          asperiores voluptas delectus hic quisquam officia eum ad, veniam
-          accusantium consequatur voluptates vitae eius facilis in error
-          corrupti? Exercitationem facere similique vero aut iste in quaerat
-          reiciendis natus ad ullam sapiente, repudiandae voluptatibus ipsa
-          iusto aliquam sed culpa animi minima consequuntur dolores, sint
-          tempora obcaecati? Cumque animi adipisci culpa earum tenetur
-          praesentium facere! Maiores unde, dolorem eum, in asperiores hic quis
-          ipsa animi numquam amet sequi quidem at quibusdam, illo voluptatem.
-        </p>
+        <div class="top-bar">
+          <button class="btn" id="prev-page">
+            <i class="fas fa-arrow-circle-left"></i> Prev Page
+          </button>
+    
+          <button class="btn" id="next-page">
+            Next Page <i class="fas fa-arrow-circle-right"></i>
+          </button>
+          <span class="page-info">
+            Page <span id="page-num"></span> of <span id="page-count"></span>
+          </span>
+        </div>
+        <canvas id="pdf-render"></canvas>
+        
       </div>
     </div>
 
@@ -443,5 +421,7 @@
       });
     </script>
     <script src="https://kit.fontawesome.com/7acdbbb9f2.js"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
