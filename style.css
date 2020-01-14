@@ -131,24 +131,12 @@ i:hover {
   margin-bottom: 25px;
 }
 
-.top-bar {
-  background: #011e41;
-  color: #fff;
-  padding: 1rem;
+.carousel .indicators .indicator-item {
+  background-color: #011e41;
 }
 
-.btn:hover {
-  opacity: 0.9;
-}
-
-.page-info {
-  margin-left: 1rem;
-}
-
-.error {
-  background: orangered;
-  color: #fff;
-  padding: 1rem;
+.carousel .indicators .indicator-item.active {
+  background-color: #00b2e3;
 }
 
 @media only screen and (max-width: 1156px) {
