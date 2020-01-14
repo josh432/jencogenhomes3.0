@@ -1,92 +1,52 @@
-const url = "../docs/30dayguide.pdf";
+$(document).ready(function() {
+  $(".sidenav").sidenav();
+  $(".parallax").parallax();
+  $(".materialboxed").materialbox();
+  $(".scrollspy").scrollSpy();
+  $(".slider").slider({ height: 1500, interval: 20000 });
+  $(".carousel.carousel-slider").carousel({
+    fullWidth: true,
+    indicators: true
+  });
 
-let pdfDoc = null,
-  pageNum = 1,
-  pageIsRendering = false,
-  pageNumIsPending = null;
+  // Hide header on scroll down
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $("nav").outerHeight();
 
-const scale = 1.1,
-  canvas = document.querySelector("#pdf-render"),
-  ctx = canvas.getContext("2d");
+  $(window).scroll(function(event) {
+    didScroll = true;
+  });
 
-//Render the page
-const renderPage = num => {
-  pageIsRendering = true;
+  setInterval(function() {
+    if (didScroll) {
+      hasScrolled();
+      didScroll = false;
+    }
+  }, 250);
 
-  //Get the page
-  pdfDoc.getPage(num).then(page => {
-    //set scale
-    const viewport = page.getViewport({ scale });
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
+  function hasScrolled() {
+    var st = $(this).scrollTop();
 
-    const renderCtx = {
-      canvasContext: ctx,
-      viewport
-    };
+    // Make scroll more than delta
+    if (Math.abs(lastScrollTop - st) <= delta) return;
 
-    page.render(renderCtx).promise.then(() => {
-      pageIsRendering = false;
-
-      if (pageNumIsPending !== null) {
-        renderPage(pageNumIsPending);
-        pageNumIsPending = null;
+    // If scrolled down and past the navbar, add class sticky-nav.
+    if (st > lastScrollTop && st > navbarHeight) {
+      // Scroll Down
+      $("nav")
+        .removeClass("sticky-nav")
+        .addClass("nav-down");
+    } else {
+      // Scroll Up
+      if (st + $(window).height() < $(document).height()) {
+        $("nav")
+          .addClass("sticky-nav")
+          .removeClass("nav-down");
       }
-    });
+    }
 
-    //Output current page
-    document.querySelector("#page-num").textContent = num;
-  });
-};
-
-// Check for pages rendering
-const queueRenderPage = num => {
-  if (pageIsRendering) {
-    pageNumIsPending = num;
-  } else {
-    renderPage(num);
+    lastScrollTop = st;
   }
-};
-
-// Show previous page
-const showPrevPage = () => {
-  if (pageNum <= 1) {
-    return;
-  }
-  pageNum--;
-  queueRenderPage(pageNum);
-};
-
-// Show next page
-const showNextPage = () => {
-  if (pageNum >= pdfDoc.numPages) {
-    return;
-  }
-  pageNum++;
-  queueRenderPage(pageNum);
-};
-
-//Get the document
-pdfjsLib
-  .getDocument(url)
-  .promise.then(pdfDoc_ => {
-    pdfDoc = pdfDoc_;
-
-    document.querySelector("#page-count").textContent = pdfDoc.numPages;
-
-    renderPage(pageNum);
-  })
-  .catch(err => {
-    //display error
-    const div = document.createElement("div");
-    div.className = "error";
-    div.appendChild(document.createTextNode(err.message));
-    document.querySelector("body").insertBefore(div, canvas);
-
-    //Remove top bar'
-    document.querySelector(".top-bar").getElementsByClassName.display = "none";
-  });
-
-//Button events
-document.querySelector("#prev-page").addEventListener("click", showPrevPage);
-document.querySelector("#next-page").addEventListener("click", showNextPage);
+});
