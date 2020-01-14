@@ -1,0 +1,107 @@
+<!-- 
+      <div class="row">
+        <div class="col s12 m4 center-align">
+          <i class="large material-icons three">camera_enhance</i>
+          <p class="title">Home Staging & Professional Photography</p>
+          <p>
+            Jen only uses first class photographers and videographers to
+            showcase how perfect your home really is.
+          </p>
+        </div>
+        <div class="col s12 m4 center-align">
+          <i class="large material-icons three">assignment</i>
+          <p class="title">Personalized Marketing Plans</p>
+          <p>
+            With our own in house marketing team, Jen pays close attention to
+            detail to each listing and how they each need to be marketed
+            differently
+          </p>
+        </div>
+        <div class="col s12 m4 center-align">
+          <i class="large material-icons three">textsms</i>
+          <p class="title">Monitor Your Transaction from Start to Finish</p>
+          <p>
+            When you choose Jen, you work with Jen. She handles your transaction
+            from start to finish no matter what.
+          </p>
+        </div>
+      </div>
+      <br />
+    -->
+
+    <!-- <div class="row center-align">
+        <div class="col s12 m4">
+          <img src="img/pic1.PNG" class="circle responsive-img" />
+          <p>
+            <i class="material-icons red-text">place</i>5 Heather Ln<br />
+            Orinda
+          </p>
+          <p>$3,898,000</p>
+          <p>6 Bed 6 Bath 5150 sq. ft.</p>
+          <button class="btn waves-effect waves-light">
+            Read More
+          </button>
+        </div>
+        <div class="col s12 m4 center-align">
+          <img src="img/pic2.PNG" class="circle responsive-img" />
+          <p>
+            <i class="material-icons red-text">place</i>20 Coronado <br />Walnut
+            Creek
+          </p>
+          <p>$2,500,000</p>
+          <p>
+            5 Bed 5 Bath 4050 sq. ft.
+          </p>
+          <button class="btn waves-effect waves-light">
+            Read More
+          </button>
+        </div>
+        <div class="col s12 m4 center-align">
+          <img src="img/pic3.PNG" class="circle responsive-img" />
+          <p>
+            <i class="material-icons red-text">place</i>148 Erselia Trail<br />
+            Alamo
+          </p>
+          <p>$2,288,000</p>
+          <p>4 Bed 4 Bath 4005 Sq. ft.</p>
+          <button class="btn waves-effect waves-light">
+            Read More
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-image">
+              <img class="responsive-image" src="img/pic4.PNG" />
+              <span class="card-title" id="overlay"
+                >3198 Stanley Blvd Lafayette offered at $1,570,000</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+-->
+
+<-- <div class="section white">
+      <div class="row container">
+        <h4 class="header center-align section scrollspy" id="29dayguide">
+          29 Day Guide
+        </h4>
+        <div class="top-bar">
+          <a class="waves-effect waves-light btn-large" id="prev-page"
+            >Previous Page</a
+          >
+
+          <a class="waves-effect waves-light btn-large" id="next-page"
+            >Next Page</a
+          >
+          <span class="page-info">
+            Page <span id="page-num"></span> of <span id="page-count"></span>
+          </span>
+        </div>
+        <canvas id="pdf-render"></canvas>
+      </div>
+    </div>
+    -->
