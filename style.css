@@ -81,7 +81,7 @@ p.title {
   margin-top: -1.3em;
 }
 a.btn-large {
-  background-color: transparent;
+  background-color: #fff;
   border-width: 2px;
   border-style: solid;
   border-radius: 3px;
@@ -132,18 +132,9 @@ i:hover {
 }
 
 .top-bar {
-  background: #333;
+  background: #011e41;
   color: #fff;
   padding: 1rem;
-}
-
-.btn {
-  background: coral;
-  color: #fff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 0.7rem 2rem;
 }
 
 .btn:hover {
