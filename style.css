@@ -136,7 +136,8 @@ i:hover {
 }
 
 .carousel .indicators .indicator-item.active {
-  background-color: #00b2e3;
+  background-color: #fff;
+  border: 1px solid #00b2e3;
 }
 
 @media only screen and (max-width: 1156px) {
