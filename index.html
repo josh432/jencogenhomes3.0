@@ -277,63 +277,89 @@
         <h4 class="header center-align section scrollspy" id="29dayguide">
           29 Day Guide
         </h4>
+        <div class="carousel carousel-slider">
+          <a class="carousel-item"><img src="img/1.jpg"></a>
+          <a class="carousel-item"><img src="img/2.jpg"></a>
+          <a class="carousel-item"><img src="img/3.jpg"></a>
+          <a class="carousel-item"><img src="img/4.jpg"></a>
+          <a class="carousel-item"><img src="img/5.jpg"></a>
+          <a class="carousel-item"><img src="img/6.jpg"></a>
+          <a class="carousel-item"><img src="img/7.jpg"></a>
+          <a class="carousel-item"><img src="img/8.jpg"></a>
+          <a class="carousel-item"><img src="img/9.jpg"></a>
+          <a class="carousel-item"><img src="img/10.jpg"></a>
+          <a class="carousel-item"><img src="img/11.jpg"></a>
+          <a class="carousel-item"><img src="img/12.jpg"></a>
+          <a class="carousel-item"><img src="img/13.jpg"></a>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!--
         <div class="slider">
           <ul class="slides">
             <li>
               <img src="img/1.jpg" />
-              <!-- random image -->
+              
             </li>
             <li>
               <img src="img/2.jpg" />
-              <!-- random image -->
+              
             </li>
             <li>
               <img src="img/3.jpg" />
-              <!-- random image -->
+              
             </li>
             <li>
               <img src="img/4.jpg" />
-              <!-- random image -->
+              
             </li>
             <li>
               <img src="img/5.jpg" />
-              <!-- random image -->
+              
             </li>
             <li>
               <img src="img/6.jpg" />
-              <!-- random image -->
+              
             </li>
             <li>
               <img src="img/7.jpg" />
-              <!-- random image -->
+              
             </li>
             <li>
               <img src="img/8.jpg" />
-              <!-- random image -->
+              
             </li>
             <li>
               <img src="img/9.jpg" />
-              <!-- random image -->
+            
             </li>
             <li>
               <img src="img/10.jpg" />
-              <!-- random image -->
+              
             </li>
             <li>
               <img src="img/11.jpg" />
-              <!-- random image -->
+              
             </li>
             <li>
               <img src="img/12.jpg" />
-              <!-- random image -->
+              
             </li>
             <li>
               <img src="img/13.jpg" />
-              <!-- random image -->
+              <!-- random image --
             </li>
           </ul>
         </div>
       </div>
+    -->
     </div>
 
     <!--JavaScript at end of body for optimized loading-->
@@ -349,6 +375,10 @@
         $(".materialboxed").materialbox();
         $(".scrollspy").scrollSpy();
         $(".slider").slider({ height: 1500, interval: 20000 });
+        $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
+
 
         // Hide header on scroll down
         var didScroll;
