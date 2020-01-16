@@ -296,11 +296,17 @@
     <script>
       function initMap() {
         var options = {
-          zoom: 15,
-          center: { lat: 37.8858, lng: -122.118 }
+          zoom: 10,
+          center: { lat: 37.93, lng: -122.0700 }
         };
         var map = new google.maps.Map(document.getElementById("map"), options);
-        addMarker({ lat: 37.8858, lng: -122.118 });
+        addMarker({ lat: 37.9480, lng: -122.0608 })
+        addMarker({ lat: 37.8771, lng: -122.1797 })
+        addMarker({ lat: 37.8349, lng: -122.1297 })
+        addMarker({ lat: 38.0194, lng: -122.1341 })
+        addMarker({ lat: 37.8858, lng: -122.1180 })
+        addMarker({ lat: 37.9101, lng: -122.0652 })
+        addMarker({ lat: 37.9780, lng: -122.0311 })
 
         function addMarker(coords) {
           var marker = new google.maps.Marker({
