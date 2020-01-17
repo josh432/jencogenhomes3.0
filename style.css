@@ -39,6 +39,12 @@ ul.sidenav {
   top: -50px;
 }
 
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: #00b2e3;
+  background-color: #011e41;
+}
+
 #dudum {
   height: 150px;
   padding-top: 5px;
