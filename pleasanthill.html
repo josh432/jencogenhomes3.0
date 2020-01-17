@@ -21,6 +21,16 @@
 
 <body>
   <!--Navbar-->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="lafayette.html">Lafayette</a></li>
+    <li><a href="martinez.html">Martinez</a></li>
+    <li><a href="moraga.html">Moraga</a></li>
+    <li><a href="orinda.html">Orinda</a></li>
+    <li><a href="pleasanthill.html">Pleasant Hill</a></li>
+    <li><a href="walnutcreek.html">Walnut Creek</a></li>
+  </ul>
+
+
   <div class="navwrap">
     <nav id="nav">
       <div class="nav-wrapper custom">
@@ -29,21 +39,27 @@
 
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="index.html"><a href="index.html"><i class="fas fa-home fa-lg"></i></a>
-            </li>
+            <li><a href="index.html"><i class="fas fa-home fa-lg" style="color: white;"></i></a></li>
             <li><a href="jen.html">Meet Jen</a></li>
-            <li><a href="#communities">Communities</a></li>
-            <li><a href="29dayguide.html">29 Day Guide</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Communities<i
+                  class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#29dayguide">29 Day Guide</a></li>
             <li><a href="videos.html">Local Videos</a></li>
-            <li><a href="https://www.facebook.com/jencogenhomes/" target="_blank"><i
-                  class="fab fa-facebook-square fa-xs"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/jencogen" target="_blank"><i class="fab fa-linkedin fa-xs"></i></a>
+            <li>
+              <a href="https://www.facebook.com/jencogenhomes/" target="_blank"><i
+                  class="fab fa-facebook-square fa-xs"></i></a>
             </li>
-            <li><a href="https://www.pinterest.com/jencogen/" target="_blank"><i
-                  class="fab fa-pinterest-square fa-xs"></i></a></li>
-            <li><a href="https://www.instagram.com/jencogenrealtor/" target="_blank"><i
-                  class="fab fa-instagram fa-xs"></i></a></i></a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/jencogen" target="_blank"><i class="fab fa-linkedin fa-xs"></i></a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/jencogen/" target="_blank"><i
+                  class="fab fa-pinterest-square fa-xs"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/jencogenrealtor/" target="_blank"><i
+                  class="fab fa-instagram fa-xs"></i></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -52,7 +68,16 @@
   <br />
   <br />
   <br />
+  <br />
 
+  <!--Mobile Navbar-->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="jen.html">Meet Jen</a></li>
+    <li><a href="#communities">Communities</a></li>
+    <li><a href="#29dayguide">29 Day Guide</a></li>
+    <li><a href="videos.html">Local Videos</a></li>
+  </ul>
   <div class="container">
     <div class="row">
       <div class="col s12 m12">
@@ -113,54 +138,7 @@
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".sidenav").sidenav();
-      $(".parallax").parallax();
-      $(".materialboxed").materialbox();
-      $(".scrollspy").scrollSpy();
-      // Hide header on scroll down
-      var didScroll;
-      var lastScrollTop = 0;
-      var delta = 5;
-      var navbarHeight = $("nav").outerHeight();
-
-      $(window).scroll(function (event) {
-        didScroll = true;
-      });
-
-      setInterval(function () {
-        if (didScroll) {
-          hasScrolled();
-          didScroll = false;
-        }
-      }, 250);
-
-      function hasScrolled() {
-        var st = $(this).scrollTop();
-
-        // Make scroll more than delta
-        if (Math.abs(lastScrollTop - st) <= delta) return;
-
-        // If scrolled down and past the navbar, add class sticky-nav.
-        if (st > lastScrollTop && st > navbarHeight) {
-          // Scroll Down
-          $("nav")
-            .removeClass("sticky-nav")
-            .addClass("nav-down");
-        } else {
-          // Scroll Up
-          if (st + $(window).height() < $(document).height()) {
-            $("nav")
-              .addClass("sticky-nav")
-              .removeClass("nav-down");
-          }
-        }
-
-        lastScrollTop = st;
-      }
-    });
-  </script>
+  <script src="js/main.js"></script>
 
 
 
