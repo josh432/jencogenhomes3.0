@@ -141,6 +141,13 @@ i:hover {
   margin-bottom: 25px;
 }
 
+.slider .slides li img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
 .carousel .indicators .indicator-item {
   background-color: #011e41;
 }
