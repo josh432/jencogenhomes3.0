@@ -4,7 +4,7 @@ $(document).ready(function() {
   $(".parallax").parallax();
   $(".materialboxed").materialbox();
   $(".scrollspy").scrollSpy();
-  $(".slider").slider({ height: 1750, interval: 20000 });
+  $(".slider").slider({ height: 1750, interval: 20000, fullWidth: true });
   $(".carousel.carousel-slider").carousel({
     fullWidth: true,
     indicators: true
