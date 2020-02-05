@@ -76,6 +76,10 @@ p,
   font-family: "Arimo", sans-serif;
 }
 
+#overlay {
+  font-size: 3em;
+}
+
 p.title {
   color: black;
   font-weight: bold;
@@ -166,7 +170,7 @@ i:hover {
 
 @media only screen and (max-width: 1384px) {
   #overlay {
-    font-size: 0.9em;
+    font-size: 2em;
   }
 }
 
