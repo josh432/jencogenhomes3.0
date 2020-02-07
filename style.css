@@ -104,6 +104,7 @@ a.btn-large {
   font-family: "Glegoo", serif;
   font-weight: bold;
   z-index: 0;
+  margin-bottom: 10px;
 }
 
 a.btn-large:hover {
@@ -126,8 +127,16 @@ i:hover {
   color: #011e41;
 }
 
+.three1 {
+  color: white;
+}
+
 .light {
   background-color: #e0e0e0;
+}
+
+.bottom {
+  margin-left: 10px;
 }
 
 .white-text {
