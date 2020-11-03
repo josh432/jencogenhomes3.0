@@ -70,7 +70,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+span {
   font-family: "Glegoo", serif;
   color: #011e41;
 }
@@ -126,6 +127,10 @@ i:hover {
   font-weight: 600;
   color: #011e41;
   text-align: justify;
+}
+
+span.small {
+  font-family: "Arimo", sans-serif;
 }
 
 .three {
