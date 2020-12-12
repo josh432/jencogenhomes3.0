@@ -97,7 +97,7 @@ p.title {
 }
 
 .rise {
-  margin-top: -1.3em;
+  margin-top: -3.3em;
 }
 a.btn-large {
   background-color: #fff;
@@ -109,7 +109,7 @@ a.btn-large {
   font-family: "Glegoo", serif;
   font-weight: bold;
   z-index: 0;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   margin-top: 10px;
 }
 
