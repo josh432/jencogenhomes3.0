@@ -5,6 +5,7 @@ $(document).ready(function() {
   $(".materialboxed").materialbox();
   $(".scrollspy").scrollSpy();
   $(".modal").modal();
+  $('.collapsible').collapsible();
   $(".slider").slider({ height: 1750, interval: 20000, fullWidth: true });
   $(".carousel.carousel-slider").carousel({
     fullWidth: true,
