@@ -72,13 +72,13 @@ h3,
 h4,
 h5,
 span {
-  font-family: "Glegoo", serif;
+  font-family: "Poppins", sans-serif;
   color: #011e41;
 }
 
 p,
 .btn {
-  font-family: "Arimo", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 #overlay {
@@ -106,7 +106,7 @@ a.btn-large {
   border-radius: 3px;
   border-color: #011e41;
   color: #011e41;
-  font-family: "Glegoo", serif;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   z-index: 0;
   margin-bottom: 4px;
@@ -130,7 +130,7 @@ i:hover {
 }
 
 span.small {
-  font-family: "Arimo", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .three {
@@ -150,7 +150,7 @@ span.small {
 }
 
 .white-text {
-  font-family: "Glegoo", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .social {
